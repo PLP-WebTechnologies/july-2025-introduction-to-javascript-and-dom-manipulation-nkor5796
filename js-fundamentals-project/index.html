@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Fundamentals Assignment</title>
+  <!-- Link to external stylesheet for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header section with assignment title and introduction -->
+  <header>
+    <h1>🚀 JavaScript Fundamentals Assignment</h1>
+    <p>
+      Welcome to this interactive learning project!  
+      Here, we showcase the building blocks of JavaScript in action — from handling simple variables 
+      and conditions to creating functions, working with loops, and manipulating the DOM.  
+      Use the buttons in each section to explore and see how JavaScript brings interactivity to web pages.
+    </p>
+  </header>
+
+  <!-- Main content divided into four assignment parts -->
+  <main>
+
+    <!-- Part 1: Basics (variables and conditionals) -->
+    <section id="basics" class="card">
+      <h2>📌 Part 1: Basics</h2>
+      <p>Test basic JavaScript logic by checking whether a number is positive, negative, or zero.</p>
+      <!-- Button triggers the checkNumber() function in script.js -->
+      <button onclick="checkNumber()">Check a Number</button>
+      <!-- Placeholder where JavaScript will display results -->
+      <p id="basic-output" class="output"></p>
+    </section>
+
+    <!-- Part 2: Functions -->
+    <section id="functions" class="card">
+      <h2>⚡ Part 2: Functions</h2>
+      <p>See how functions work by calculating the total of given values.</p>
+      <!-- Button triggers the showTotal() function -->
+      <button onclick="showTotal()">Calculate Total</button>
+      <!-- Output of the function will appear here -->
+      <p id="function-output" class="output"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section id="loops" class="card">
+      <h2>🔁 Part 3: Loops</h2>
+      <p>Run a countdown to observe the power of loops in JavaScript.</p>
+      <!-- Button triggers the countdown() function -->
+      <button onclick="countdown()">Start Countdown</button>
+      <!-- Loop results (countdown list) will be shown here -->
+      <ul id="loop-output" class="output-list"></ul>
+    </section>
+
+    <!-- Part 4: DOM Manipulation -->
+    <section id="dom" class="card">
+      <h2>🎨 Part 4: DOM Manipulation</h2>
+      <p>Experiment with dynamic changes on this page using JavaScript DOM methods.</p>
+      <!-- Button toggles text visibility -->
+      <button onclick="toggleText()">Toggle Text</button>
+      <p id="dom-output" class="output">This is some text that can be toggled.</p>
+
+      <!-- Extra DOM action buttons -->
+      <div class="dom-actions">
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="addItem()">Add List Item</button>
+      </div>
+      <!-- Dynamic list items will be appended here -->
+      <ul id="dynamic-list" class="output-list"></ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>✨ Created as part of a JavaScript Fundamentals Assignment ✨</p>
+  </footer>
+
+  <!-- External JavaScript file containing all the logic -->
+  <script src="script.js"></script>
+</body>
+</html>

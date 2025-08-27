@@ -1,0 +1,109 @@
+/* Reset default margins, paddings, and make sizing predictable */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Soft gradient background */
+  color: #2c3e50;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main page heading */
+h1 {
+  text-align: center;
+  color: #1a252f;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.1); /* Slight shadow for depth */
+}
+
+/* Subheadings */
+h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Output box styling */
+#output {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  padding: 15px;
+  background: #ffffffdd;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Output hover effect */
+#output:hover {
+  transform: scale(1.03); /* Grows slightly when hovered */
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Button hover animation */
+button:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: translateY(-3px); /* Button lifts up */
+}
+
+/* Active toggle button */
+.toggle-active {
+  background: linear-gradient(45deg, #27ae60, #2ecc71) !important; /* Green gradient */
+}
+
+/* List container */
+#itemList {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 500px;
+  list-style: none;
+  background: #ffffffdd;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+}
+
+/* List items */
+#itemList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for list items */
+#itemList li:hover {
+  background: #f0f8ff;
+  transform: translateX(5px); /* Shifts right slightly */
+}
+
+/* Remove last border line */
+#itemList li:last-child {
+  border-bottom: none;
+}
+/* Toggle button container */
+#toggleContainer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
